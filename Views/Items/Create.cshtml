@@ -4,11 +4,21 @@
 
 @model YeOldeInv.Models.Item
 
-<h4>Add a new task</h4>
+<h4>Add a new Item</h4>
 @using (Html.BeginForm())
 {
+  @Html.LabelFor(model => model.Object)
+  @Html.TextBoxFor(model => model.Object)
+
   @Html.LabelFor(model => model.Description)
   @Html.TextBoxFor(model => model.Description)
+
+  @Html.LabelFor(model => model.LevelReq)
+  @Html.TextBoxFor(model => model.LevelReq)
+
+  @* @Html.LabelFor(model => model.Cuisine)
+  @Html.DropDownList("CuisineId") *@
+  
   <input type="submit" value="Add new Item" />
 }
 <p>@Html.ActionLink("Show all items", "Index")</p>
