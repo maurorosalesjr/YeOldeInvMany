@@ -1,9 +1,7 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+  Layout = "_Layout";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to your shoppe inventory</h1>
-    <p>@Html.ActionLink("See all items", "Index", "Items")</p> 
-    <p>@Html.ActionLink("Add items", "Create", "Items")</p> 
-</div>
+<h1>Welcome to the your Shoppe inventory!</h1>
+<p>@Html.ActionLink("See all items", "Index", "Items")</p> 
+<p>@Html.ActionLink("See all catagories", "Index", "Categories")</p>
