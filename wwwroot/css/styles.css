@@ -1,3 +1,46 @@
 html {
   background-color: burlywood;
 }
+
+body {
+  background-color: burlywood;
+  font-family: cursive;
+  border: 5px;
+  border-style: ridge;
+  border-color: sienna;
+  border-radius: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 8%;
+  margin-bottom: 10px;
+
+}
+
+div#footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:8px;
+  text-align: center;
+}
+
+h1 {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  text-decoration: underline;
+  font-family: cursive;
+  border: 5px;
+  border-style: solid;
+  border-color:sienna;
+}
+
+img {
+  max-width: 90%;
+  margin: 5%;
+  align-content: center;
+  width: 100%;
+}
