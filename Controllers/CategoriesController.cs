@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using YeOldeInv.Models;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 namespace YeOldeInv.Controllers
 {
@@ -37,6 +39,7 @@ namespace YeOldeInv.Controllers
     public ActionResult Details(int id)
     {
       Category thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
+
       return View(thisCategory);
     }
     public ActionResult Edit(int id)
