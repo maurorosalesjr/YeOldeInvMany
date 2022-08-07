@@ -7,6 +7,8 @@
 <h2>Item Details</h2>
 <hr />
 <h3>@Html.DisplayNameFor(model => model.Object): @Html.DisplayFor(model => model.Object)</h3>
+<h5>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h5>
+<h5>Level Requirement: @Html.DisplayFor(model => model.LevelReq)</h5>
 
 @if(@Model.JoinEntities.Count == 0)
 {
@@ -19,14 +21,6 @@ else
   @foreach(var join in Model.JoinEntities)
   {
     <li>@join.Category.Name</li>
-  }
-  </ul>
-}
-
-<ul>
-  @foreach(var join in Model.JoinEntities)
-  {
-    <li>@join.Category.Name</li>
     @using (Html.BeginForm("DeleteCategory", "Items"))
     {
       @Html.Hidden("joinId", @join.CategoryItemId)
@@ -34,6 +28,9 @@ else
     }
   }
   </ul>
+}
+
+
 
 <p>@Html.ActionLink("Add a Category", "AddCategory", new { id = Model.ItemId })</p>
 <p>@Html.ActionLink("Back to list", "Index")</p>

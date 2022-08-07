@@ -18,7 +18,7 @@ else
   <ul>
   @foreach(var join in Model.JoinEntities)
   {
-    <li>@join.Item.Object</li>
+    <li>@join.Item.Object --- @join.Item.Description</li>
   }
   </ul>
 }
