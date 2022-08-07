@@ -18,7 +18,7 @@
 
 Enables user to create a shop inventory and categorizes the items 
 
-![SQL Design](wwwroot/img/SQLDesign.png)
+![SQL Design](wwwroot/img/SQLDesign.png "SQL Design")
 
 ## Setup/Installation Requirements
 
@@ -28,6 +28,9 @@ Enables user to create a shop inventory and categorizes the items
 * in terminal type : dotnet run
 * use links to create and build out database
 
+
+## Sample
+![Possible Example](wwwroot/img/example.png "Sample")
 
 
 ## Known Bugs

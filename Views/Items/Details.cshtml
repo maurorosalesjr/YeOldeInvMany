@@ -9,7 +9,9 @@
 <h3>@Html.DisplayNameFor(model => model.Object): @Html.DisplayFor(model => model.Object)</h3>
 <h5>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h5>
 <h5>Level Requirement: @Html.DisplayFor(model => model.LevelReq)</h5>
-
+<h5>Selling Price: @Html.DisplayFor(model => model.SellingPrice) Gold</h5>
+<h5>Estimated Profit: @Html.DisplayFor(model => model.EstProfit) Gold</h5>
+<h5>Aquired By: @Html.DisplayFor(model => model.AquiredBy)</h5>
 @if(@Model.JoinEntities.Count == 0)
 {
   <p>This item does not belong to any categories</p>

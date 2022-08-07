@@ -1,5 +1,5 @@
 html {
-  background-color: burlywood;
+  background-color:goldenrod;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
   margin-right: 10%;
   margin-top: 8%;
   margin-bottom: 10px;
+  padding-bottom: 2%;
 }
 
 div#footer {

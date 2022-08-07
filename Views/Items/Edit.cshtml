@@ -14,14 +14,24 @@
 
   @Html.LabelFor(model => model.Object)
   @Html.EditorFor(model => model.Object)
-
+  <br>
   @Html.LabelFor(model => model.Description)
   @Html.EditorFor(model => model.Description)
-
+  <br>
   @Html.LabelFor(model => model.LevelReq)
   @Html.EditorFor(model => model.LevelReq)
-
+  <br>
+  @Html.LabelFor(model => model.SellingPrice)
+  @Html.TextBoxFor(model => model.SellingPrice, new { @type = "number", @min = "1" })
+  <br>
+  @Html.LabelFor(model => model.EstProfit)
+  @Html.TextBoxFor(model => model.EstProfit, new { @type = "number", @min = "1" })
+  <br>
+  @Html.LabelFor(model => model.AquiredBy)
+  @Html.TextBoxFor(model => model.AquiredBy)
+  <br>
   @Html.Label("Select category")
+  <br>
   @Html.DropDownList("CategoryId")
 
   <input type="submit" value="Save" class="button-55"/>
