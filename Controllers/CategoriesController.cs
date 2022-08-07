@@ -1,74 +1,74 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
-using YeOldeInvMany.Models;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc.Rendering;
+// using Microsoft.EntityFrameworkCore;
+// using Microsoft.AspNetCore.Mvc;
+// using YeOldeInvMany.Models;
+// using System.Collections.Generic;
+// using System.Linq;
+// using Microsoft.AspNetCore.Mvc.Rendering;
 
 
-namespace YeOldeInvMany.Controllers
-{
-  public class CategoriesController : Controller
-  {
-    private readonly YeOldeInvManyContext _db;
+// namespace YeOldeInvMany.Controllers
+// {
+//   public class CategoriesController : Controller
+//   {
+//     private readonly YeOldeInvManyContext _db;
 
-    public CategoriesController(YeOldeInvManyContext db)
-    {
-      _db = db;
-    }
+//     public CategoriesController(YeOldeInvManyContext db)
+//     {
+//       _db = db;
+//     }
 
-    public ActionResult Index()
-    {
-      List<Category> model = _db.Categories.ToList();
-      return View(model);
-    }
+//     public ActionResult Index()
+//     {
+//       List<Category> model = _db.Categories.ToList();
+//       return View(model);
+//     }
 
-    public ActionResult Create()
-    {
-      return View();
-    }
+//     public ActionResult Create()
+//     {
+//       return View();
+//     }
 
-    [HttpPost]
-    public ActionResult Create(Category category)
-    {
-      _db.Categories.Add(category);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
+//     [HttpPost]
+//     public ActionResult Create(Category category)
+//     {
+//       _db.Categories.Add(category);
+//       _db.SaveChanges();
+//       return RedirectToAction("Index");
+//     }
 
-    public ActionResult Details(int id)
-    {
-      Category thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
+//     public ActionResult Details(int id)
+//     {
+//       Category thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
 
-      return View(thisCategory);
-    }
-    public ActionResult Edit(int id)
-    {
-      var thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
-      return View(thisCategory);
-    }
+//       return View(thisCategory);
+//     }
+//     public ActionResult Edit(int id)
+//     {
+//       var thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
+//       return View(thisCategory);
+//     }
 
-    [HttpPost]
-    public ActionResult Edit(Category category)
-    {
-      _db.Entry(category).State = EntityState.Modified;
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
+//     [HttpPost]
+//     public ActionResult Edit(Category category)
+//     {
+//       _db.Entry(category).State = EntityState.Modified;
+//       _db.SaveChanges();
+//       return RedirectToAction("Index");
+//     }
 
-    public ActionResult Delete(int id)
-    {
-      var thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
-      return View(thisCategory);
-    }
+//     public ActionResult Delete(int id)
+//     {
+//       var thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
+//       return View(thisCategory);
+//     }
 
-    [HttpPost, ActionName("Delete")]
-    public ActionResult DeleteConfirmed(int id)
-    {
-      var thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
-      _db.Categories.Remove(thisCategory);
-      _db.SaveChanges();
-      return RedirectToAction("Index");
-    }
-  }
-}
+//     [HttpPost, ActionName("Delete")]
+//     public ActionResult DeleteConfirmed(int id)
+//     {
+//       var thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
+//       _db.Categories.Remove(thisCategory);
+//       _db.SaveChanges();
+//       return RedirectToAction("Index");
+//     }
+//   }
+// }

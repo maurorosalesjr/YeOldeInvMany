@@ -12,6 +12,7 @@
 * C#
 * HTML
 * CSS
+* Entity Framework
 
 ## Description
 

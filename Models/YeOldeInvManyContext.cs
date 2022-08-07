@@ -6,6 +6,7 @@ namespace YeOldeInvMany.Models
   {
     public DbSet<Category> Categories { get; set; }
     public DbSet<Item> Items { get; set; }
+    public DbSet<CategoryItem> CategoryItem { get; set; }
 
     public YeOldeInvManyContext(DbContextOptions options) : base(options) { }
 
