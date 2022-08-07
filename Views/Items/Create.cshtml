@@ -1,4 +1,4 @@
-@* @{
+@{
   Layout = "_Layout";
 }
 
@@ -16,9 +16,9 @@
   @Html.LabelFor(model => model.LevelReq)
   @Html.TextBoxFor(model => model.LevelReq)
 
-  @Html.LabelFor(model => model.Category)
+  @Html.Label("Select category")
   @Html.DropDownList("CategoryId")
 
   <input type="submit" value="Add new item" class="btn btn-default" />
 }
-<p>@Html.ActionLink("Show all items", "Index")</p> *@
+<p>@Html.ActionLink("Show all items", "Index")</p>
