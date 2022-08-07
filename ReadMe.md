@@ -18,7 +18,7 @@
 
 Enables user to create a shop inventory and categorizes the items 
 
-![SQL Design](SQLDesign.png)
+![SQL Design](img/SQLDesign.png)
 
 ## Setup/Installation Requirements
 
