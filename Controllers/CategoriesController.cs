@@ -1,18 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using YeOldeInv.Models;
+using YeOldeInvMany.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 
-namespace YeOldeInv.Controllers
+namespace YeOldeInvMany.Controllers
 {
   public class CategoriesController : Controller
   {
-    private readonly YeOldeInvContext _db;
+    private readonly YeOldeInvManyContext _db;
 
-    public CategoriesController(YeOldeInvContext db)
+    public CategoriesController(YeOldeInvManyContext db)
     {
       _db = db;
     }

@@ -1,17 +1,17 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using YeOldeInv.Models;
+using YeOldeInvMany.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace YeOldeInv.Controllers
+namespace YeOldeInvMany.Controllers
 {
   public class ItemsController : Controller
   {
-    private readonly YeOldeInvContext _db;
+    private readonly YeOldeInvManyContext _db;
 
-    public ItemsController(YeOldeInvContext db)
+    public ItemsController(YeOldeInvManyContext db)
     {
       _db = db;
     }

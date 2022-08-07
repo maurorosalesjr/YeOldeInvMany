@@ -19,7 +19,7 @@ Enables user to create a shop inventory and categorizes the items
 
 ## Setup/Installation Requirements
 
-* clone repo from https://github.com/maurorosalesjr/YeOldeInv
+* clone repo from https://github.com/maurorosalesjr/YeOldeInvMany
 * import database structure from DataStructure Folder
 * in terminal type : dotnet restore
 * in terminal type : dotnet build

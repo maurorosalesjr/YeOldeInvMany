@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace YeOldeInv.Models
+namespace YeOldeInvMany.Models
 {
     public class Category
     {

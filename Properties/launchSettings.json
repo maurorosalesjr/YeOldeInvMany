@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "YeOldeInv": {
+    "YeOldeInvMany": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

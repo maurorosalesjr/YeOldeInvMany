@@ -10,9 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using YeOldeInv.Models;
+using YeOldeInvMany.Models;
 
-namespace YeOldeInv
+namespace YeOldeInvMany
 {
     public class Startup
     {
@@ -31,7 +31,7 @@ namespace YeOldeInv
         services.AddMvc();
 
         services.AddEntityFrameworkMySql()
-            .AddDbContext<YeOldeInvContext>(options => options
+            .AddDbContext<YeOldeInvManyContext>(options => options
             .UseMySql(Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(Configuration["ConnectionStrings:DefaultConnection"])));
         }
 
