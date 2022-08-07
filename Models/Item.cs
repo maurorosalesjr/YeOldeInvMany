@@ -13,6 +13,9 @@ namespace YeOldeInvMany.Models
         public string Object { get; set; }
         public string Description { get; set; }
         public int LevelReq { get; set; }
+        public int SellingPrice { get; set; }
+        public int EstProfit { get; set; }
+        public string AquiredBy { get; set; }
 
         public virtual ICollection<CategoryItem> JoinEntities { get;}
     }

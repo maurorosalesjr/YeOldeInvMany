@@ -18,6 +18,8 @@
 
 Enables user to create a shop inventory and categorizes the items 
 
+![SQL Design](SQLDesign.png)
+
 ## Setup/Installation Requirements
 
 * clone repo from https://github.com/maurorosalesjr/YeOldeInvMany
